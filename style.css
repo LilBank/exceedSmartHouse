@@ -1,5 +1,7 @@
 .home{
     background-color: paleturquoise;
+    max-width: 1300px;
+    margin: auto;
 }
 .page {
     text-align: center;
@@ -20,13 +22,18 @@
 }
 
 #lightbox {
-    background: #25272A;
+  
     -webkit-transition: background-color 150ms ease-out !important;
     transition: background-color 150ms ease-out !important;
   }
+
   
   #lightbox.day-background {
     background: #FFDB88;
+  }
+
+  #lightbox.night-background {
+    background:  #25272A;
   }
   
   .button-con {
@@ -189,3 +196,9 @@
   .slider.round:before {
     border-radius: 50%;
   }
+  .minibox{
+    border: 3px solid seashell;
+    width: 100px;
+    height: 100px;
+}
+
