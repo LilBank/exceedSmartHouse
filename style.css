@@ -1,5 +1,7 @@
 .home{
     background-color: paleturquoise;
+    max-width: 1300px;
+    margin: auto;
 }
 .page {
     text-align: center;
@@ -132,3 +134,10 @@
   .toggle:checked + .toggle-button:after {
     left: 50%;
   }
+
+  .minibox{
+    border: 3px solid seashell;
+    width: 100px;
+    height: 100px;
+}
+
