@@ -6,7 +6,6 @@ $(function () {
     $('#lightbox').toggleClass('day-background');
 
     setInterval(function () {
-
         $.ajax({
             type: "GET",
             url: "http://ecourse.cpe.ku.ac.th:1515/api/wongpalm-light/view/",
@@ -14,10 +13,13 @@ $(function () {
             success: function (response) {
                 if (response !== light) {
                     if(response === '1'){
-
                         $('#cb1').attr("checked",false)
+                        $('#lightbox').toggleClass('night-background');
+                        console.log("off")
                     }else{
                         $('#cb1').attr("checked",true)
+                        $('#lightbox').toggleClass('day-background');
+                        console.log("on")
                     }
                 }
                 light = response
@@ -43,22 +45,17 @@ $(function () {
             dataType: "json",
             success: function (response) {
                 console.log('aaaaaaaa', light)
-                if (response === '0') {
-                    $('#lightbox').toggleClass('day-background');
-                    console.log("on")
-                } else {
-                    $('#lightbox').toggleClass('night-background');
-                    console.log("off")
-                }
+                // if (response === '0') {
+                //     $('#lightbox').toggleClass('day-background');
+                //     console.log("on")
+                // } else {
+                //     $('#lightbox').toggleClass('night-background');
+                //     console.log("off")
+                // }
 
             }
         });
     });
-
-
-
-
-
 
 
 
