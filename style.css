@@ -1,39 +1,30 @@
 .home{
     background-color: paleturquoise;
+    max-width: 1440px;
+    margin: auto;
 }
 .page {
     text-align: center;
-    margin: auto;
-}
 
-.font1{
-    font-family: "Arial Black", Gadget, sans-serif;
-}
-
-.font2{
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .box{
-    border: 2px solid rgb(69, 51, 150);
-    border-radius: 20px 20px 20px 20px;
-    /* width: 400px; */
+    width: 1000px;
     height: 400px;
-}
-
-#box1{
-    text-align: center;
     margin: auto;
-    background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    
+}
+.enter{
+    margin-top: 80px;
 }
 
-body {
+#lightbox {
     background: #25272A;
     -webkit-transition: background-color 150ms ease-out !important;
     transition: background-color 150ms ease-out !important;
   }
   
-  body.day-background {
+  #lightbox.day-background {
     background: #FFDB88;
   }
   
@@ -138,3 +129,10 @@ body {
   .toggle:checked + .toggle-button:after {
     left: 50%;
   }
+
+  .minibox{
+    border: 3px solid seashell;
+    width: 100px;
+    height: 100px;
+}
+

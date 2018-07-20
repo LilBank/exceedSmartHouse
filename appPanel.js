@@ -9,8 +9,7 @@ $(function () {
         }
     });
 
-    // $('body').toggleClass('day-background');
+    $('#lightbox').toggleClass('day-background');
 
-    // $('#cb1').on('click', function () { $('body').toggleClass('day-background'); });
-
+    $('#cb1').on('click', function () { $('#lightbox').toggleClass('day-background'); });
 })
