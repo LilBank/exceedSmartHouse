@@ -13,10 +13,13 @@ $(function () {
             dataType: "text",
             success: function (response) {
                 if (response !== light) {
-                    if(response === '1'){
-                        $('#cb1').attr("checked",false)
-                    }else{
-                        $('#cb1').attr("checked",true)
+                    if (response === '1') {
+                        $('#cb1').attr("checked", false)
+                        // $("#house").html("")
+                        // <img src="./lightoffdoorclose.png" width="1125px" height="740px">
+                        // $("lightText").text("ON")
+                    } else {
+                        $('#cb1').attr("checked", true)
                     }
                 }
                 light = response
