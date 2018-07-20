@@ -17,13 +17,18 @@
 }
 
 #lightbox {
-    background: #25272A;
+  
     -webkit-transition: background-color 150ms ease-out !important;
     transition: background-color 150ms ease-out !important;
   }
+
   
   #lightbox.day-background {
     background: #FFDB88;
+  }
+
+  #lightbox.night-background {
+    background:  #25272A;
   }
   
   .button-con {
