@@ -7,16 +7,19 @@
     width: 1000px;
     height: 400px;
     margin: auto;
-
+    
+}
+.enter{
+    margin-bottom: 100px;
 }
 
-body {
+#lightbox {
     background: #25272A;
     -webkit-transition: background-color 150ms ease-out !important;
     transition: background-color 150ms ease-out !important;
   }
   
-  body.day-background {
+  #lightbox.day-background {
     background: #FFDB88;
   }
   
@@ -121,4 +124,3 @@ body {
   .toggle:checked + .toggle-button:after {
     left: 50%;
   }
-  
