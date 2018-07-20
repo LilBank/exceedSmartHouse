@@ -12,37 +12,59 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="icon1.png">
 
-    <title>Smart House panel</title>
+    <title>Smart House Panel</title>
 </head>
 
-<body>
-    <h1 class="alert alert-primary font1 page" role="alert">SMART HOUSE PANEL</h1>
 
-    <div class="row">
+
+<body style="background-color:powderblue;">
+
+    <h1 class="font1 page">SMART HOUSE PANEL</h1>
+    <div class="row" style="background-image: linear-gradient(-225deg, #5D9FFF 0%, #B8DCFF 48%, #6BBBFF 100%);">
         <div class="col-12">
-            <div class="font2 page alert alert-danger"role="alert">
+            <div class="font2 page alert alert-danger" role="alert">
                 <h2>Buzzer</h2>
             </div>
-            <div class="border box"></div>
+            <div class="border box">
+                <img src="buzzericon.png" align="middle" width="200px">
+                
+                <!-- Rounded switch -->
+                <div>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
         </div>
 
     </div>
 
-    <div class="row enter">
+    <div class="row enter" style="background-image: linear-gradient(-225deg, #5D9FFF 0%, #B8DCFF 48%, #6BBBFF 100%);">
         <div class="col-12">
             <div class="font2 page alert alert-danger">
                 <h2>Air Conditioner</h2>
             </div>
-            <div class="border box"></div>
+            <div class="border box">
+                <img src="airicon.png" align="bottom" width="200px">
+                <!-- Rounded switch -->
+                <div>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+                </div>
+            </div>
         </div>
 
     </div>
-    <div class="row enter">
+    <div class="row enter" style="background-image: linear-gradient(-225deg, #5D9FFF 0%, #B8DCFF 48%, #6BBBFF 100%);">
         <div class="col-12">
             <div class="font2 page alert alert-danger">
                 <h2>Light</h2>
             </div>
             <div class="border box enter" id="lightbox">
+                <img src="lighticon.png" align="middle" width="200px">
                 <div class="button-con">
                     <label for='cb1'>
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="dayIcon" x="0px" y="0px"
@@ -69,24 +91,25 @@
         </div>
 
     </div>
-    <div class="row enter">
+    <div class="row enter" style="background-image: linear-gradient(-225deg, #5D9FFF 0%, #B8DCFF 48%, #6BBBFF 100%);">
         <div class="col-12">
             <div class="font2 page alert alert-danger">
                 <h2>Door</h2>
             </div>
-            <div class="border box"></div>
-        </div>
-
-    </div>
-    <div class="row enter">
-        <div class="col-12">
-            <div class="font2 page alert alert-danger">
-                <h2>Statistic</h2>
+            <div class="border box">
+                <img src="dooricon.png" align="middle" width="200px">
+                <!-- Rounded switch -->
+                <div>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+                </div>
             </div>
-            <div class="border box"></div>
         </div>
 
     </div>
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
