@@ -14,7 +14,6 @@ $(function () {
             success: function (response) {
                 if (response !== light) {
                     if(response === '1'){
-
                         $('#cb1').attr("checked",false)
                     }else{
                         $('#cb1').attr("checked",true)
